@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvnxcp004gd6d"]
+
+[ext_resource type="Texture2D" uid="uid://cq1j5rx85pwy8" path="res://assets/characters/champion.png" id="1_dygvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cr1ud"]
+size = Vector2(14, 16)
+
+[node name="Champion" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dygvq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_cr1ud")
